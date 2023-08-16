@@ -9,12 +9,12 @@ import (
 	"reflect"
 	"sync"
 
-	"google.golang.org/protobuf/encoding/protowire"
-	"google.golang.org/protobuf/internal/errors"
-	"google.golang.org/protobuf/proto"
-	"google.golang.org/protobuf/reflect/protoreflect"
-	"google.golang.org/protobuf/reflect/protoregistry"
-	"google.golang.org/protobuf/runtime/protoiface"
+	"github.com/CoinFlowwExchange/protobuf/encoding/protowire"
+	"github.com/CoinFlowwExchange/protobuf/internal/errors"
+	"github.com/CoinFlowwExchange/protobuf/proto"
+	"github.com/CoinFlowwExchange/protobuf/reflect/protoreflect"
+	"github.com/CoinFlowwExchange/protobuf/reflect/protoregistry"
+	"github.com/CoinFlowwExchange/protobuf/runtime/protoiface"
 )
 
 type errInvalidUTF8 struct{}

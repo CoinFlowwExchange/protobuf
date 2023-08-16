@@ -7,14 +7,14 @@ package impl
 import (
 	"reflect"
 
-	"google.golang.org/protobuf/internal/descopts"
-	"google.golang.org/protobuf/internal/encoding/messageset"
-	ptag "google.golang.org/protobuf/internal/encoding/tag"
-	"google.golang.org/protobuf/internal/filedesc"
-	"google.golang.org/protobuf/internal/pragma"
-	"google.golang.org/protobuf/reflect/protoreflect"
-	"google.golang.org/protobuf/reflect/protoregistry"
-	"google.golang.org/protobuf/runtime/protoiface"
+	"github.com/CoinFlowwExchange/protobuf/internal/descopts"
+	"github.com/CoinFlowwExchange/protobuf/internal/encoding/messageset"
+	ptag "github.com/CoinFlowwExchange/protobuf/internal/encoding/tag"
+	"github.com/CoinFlowwExchange/protobuf/internal/filedesc"
+	"github.com/CoinFlowwExchange/protobuf/internal/pragma"
+	"github.com/CoinFlowwExchange/protobuf/reflect/protoreflect"
+	"github.com/CoinFlowwExchange/protobuf/reflect/protoregistry"
+	"github.com/CoinFlowwExchange/protobuf/runtime/protoiface"
 )
 
 func (xi *ExtensionInfo) initToLegacy() {

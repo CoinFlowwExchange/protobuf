@@ -8,12 +8,12 @@ import (
 	"strings"
 	"testing"
 
-	"google.golang.org/protobuf/reflect/protoreflect"
-	"google.golang.org/protobuf/reflect/protoregistry"
-	"google.golang.org/protobuf/types/descriptorpb"
-	"google.golang.org/protobuf/types/dynamicpb"
+	"github.com/CoinFlowwExchange/protobuf/reflect/protoreflect"
+	"github.com/CoinFlowwExchange/protobuf/reflect/protoregistry"
+	"github.com/CoinFlowwExchange/protobuf/types/descriptorpb"
+	"github.com/CoinFlowwExchange/protobuf/types/dynamicpb"
 
-	registrypb "google.golang.org/protobuf/internal/testprotos/registry"
+	registrypb "github.com/CoinFlowwExchange/protobuf/internal/testprotos/registry"
 )
 
 var _ protoregistry.ExtensionTypeResolver = &dynamicpb.Types{}

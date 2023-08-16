@@ -10,15 +10,15 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"google.golang.org/protobuf/internal/descfmt"
-	"google.golang.org/protobuf/internal/descopts"
-	"google.golang.org/protobuf/internal/encoding/defval"
-	"google.golang.org/protobuf/internal/encoding/messageset"
-	"google.golang.org/protobuf/internal/genid"
-	"google.golang.org/protobuf/internal/pragma"
-	"google.golang.org/protobuf/internal/strs"
-	"google.golang.org/protobuf/reflect/protoreflect"
-	"google.golang.org/protobuf/reflect/protoregistry"
+	"github.com/CoinFlowwExchange/protobuf/internal/descfmt"
+	"github.com/CoinFlowwExchange/protobuf/internal/descopts"
+	"github.com/CoinFlowwExchange/protobuf/internal/encoding/defval"
+	"github.com/CoinFlowwExchange/protobuf/internal/encoding/messageset"
+	"github.com/CoinFlowwExchange/protobuf/internal/genid"
+	"github.com/CoinFlowwExchange/protobuf/internal/pragma"
+	"github.com/CoinFlowwExchange/protobuf/internal/strs"
+	"github.com/CoinFlowwExchange/protobuf/reflect/protoreflect"
+	"github.com/CoinFlowwExchange/protobuf/reflect/protoregistry"
 )
 
 // The types in this file may have a suffix:

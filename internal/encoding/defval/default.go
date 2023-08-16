@@ -14,9 +14,9 @@ import (
 	"math"
 	"strconv"
 
-	ptext "google.golang.org/protobuf/internal/encoding/text"
-	"google.golang.org/protobuf/internal/errors"
-	"google.golang.org/protobuf/reflect/protoreflect"
+	ptext "github.com/CoinFlowwExchange/protobuf/internal/encoding/text"
+	"github.com/CoinFlowwExchange/protobuf/internal/errors"
+	"github.com/CoinFlowwExchange/protobuf/reflect/protoreflect"
 )
 
 // Format is the serialization format used to represent the default value.

@@ -12,12 +12,12 @@ import (
 	"strings"
 	"time"
 
-	"google.golang.org/protobuf/internal/encoding/json"
-	"google.golang.org/protobuf/internal/errors"
-	"google.golang.org/protobuf/internal/genid"
-	"google.golang.org/protobuf/internal/strs"
-	"google.golang.org/protobuf/proto"
-	"google.golang.org/protobuf/reflect/protoreflect"
+	"github.com/CoinFlowwExchange/protobuf/internal/encoding/json"
+	"github.com/CoinFlowwExchange/protobuf/internal/errors"
+	"github.com/CoinFlowwExchange/protobuf/internal/genid"
+	"github.com/CoinFlowwExchange/protobuf/internal/strs"
+	"github.com/CoinFlowwExchange/protobuf/proto"
+	"github.com/CoinFlowwExchange/protobuf/reflect/protoreflect"
 )
 
 type marshalFunc func(encoder, protoreflect.Message) error

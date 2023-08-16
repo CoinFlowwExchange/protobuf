@@ -14,11 +14,11 @@ import (
 	"path/filepath"
 	"testing"
 
-	"google.golang.org/protobuf/encoding/protojson"
-	"google.golang.org/protobuf/encoding/prototext"
-	"google.golang.org/protobuf/proto"
+	"github.com/CoinFlowwExchange/protobuf/encoding/protojson"
+	"github.com/CoinFlowwExchange/protobuf/encoding/prototext"
+	"github.com/CoinFlowwExchange/protobuf/proto"
 
-	pb "google.golang.org/protobuf/internal/testprotos/conformance"
+	pb "github.com/CoinFlowwExchange/protobuf/internal/testprotos/conformance"
 )
 
 func init() {

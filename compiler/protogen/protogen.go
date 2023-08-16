@@ -27,17 +27,17 @@ import (
 	"strconv"
 	"strings"
 
-	"google.golang.org/protobuf/encoding/prototext"
-	"google.golang.org/protobuf/internal/genid"
-	"google.golang.org/protobuf/internal/strs"
-	"google.golang.org/protobuf/proto"
-	"google.golang.org/protobuf/reflect/protodesc"
-	"google.golang.org/protobuf/reflect/protoreflect"
-	"google.golang.org/protobuf/reflect/protoregistry"
+	"github.com/CoinFlowwExchange/protobuf/encoding/prototext"
+	"github.com/CoinFlowwExchange/protobuf/internal/genid"
+	"github.com/CoinFlowwExchange/protobuf/internal/strs"
+	"github.com/CoinFlowwExchange/protobuf/proto"
+	"github.com/CoinFlowwExchange/protobuf/reflect/protodesc"
+	"github.com/CoinFlowwExchange/protobuf/reflect/protoreflect"
+	"github.com/CoinFlowwExchange/protobuf/reflect/protoregistry"
 
-	"google.golang.org/protobuf/types/descriptorpb"
-	"google.golang.org/protobuf/types/dynamicpb"
-	"google.golang.org/protobuf/types/pluginpb"
+	"github.com/CoinFlowwExchange/protobuf/types/descriptorpb"
+	"github.com/CoinFlowwExchange/protobuf/types/dynamicpb"
+	"github.com/CoinFlowwExchange/protobuf/types/pluginpb"
 )
 
 const goPackageDocURL = "https://protobuf.dev/reference/go/go-generated#package"
@@ -228,7 +228,7 @@ func (opts Options) New(req *pluginpb.CodeGeneratorRequest) (*Plugin, error) {
 	// .proto source file specifying the full import path of the Go package
 	// associated with this file.
 	//
-	//     option go_package = "google.golang.org/protobuf/types/known/anypb";
+	//     option go_package = "github.com/CoinFlowwExchange/protobuf/types/known/anypb";
 	//
 	// Alternatively, build systems which want to exert full control over
 	// import paths may specify M<filename>=<import_path> flags.
@@ -1235,7 +1235,7 @@ func newGoIdent(f *File, d protoreflect.Descriptor) GoIdent {
 }
 
 // A GoImportPath is the import path of a Go package.
-// For example: "google.golang.org/protobuf/compiler/protogen"
+// For example: "github.com/CoinFlowwExchange/protobuf/compiler/protogen"
 type GoImportPath string
 
 func (p GoImportPath) String() string { return strconv.Quote(string(p)) }

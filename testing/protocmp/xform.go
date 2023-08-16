@@ -16,14 +16,14 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 
-	"google.golang.org/protobuf/encoding/protowire"
-	"google.golang.org/protobuf/internal/genid"
-	"google.golang.org/protobuf/internal/msgfmt"
-	"google.golang.org/protobuf/proto"
-	"google.golang.org/protobuf/reflect/protoreflect"
-	"google.golang.org/protobuf/reflect/protoregistry"
-	"google.golang.org/protobuf/runtime/protoiface"
-	"google.golang.org/protobuf/runtime/protoimpl"
+	"github.com/CoinFlowwExchange/protobuf/encoding/protowire"
+	"github.com/CoinFlowwExchange/protobuf/internal/genid"
+	"github.com/CoinFlowwExchange/protobuf/internal/msgfmt"
+	"github.com/CoinFlowwExchange/protobuf/proto"
+	"github.com/CoinFlowwExchange/protobuf/reflect/protoreflect"
+	"github.com/CoinFlowwExchange/protobuf/reflect/protoregistry"
+	"github.com/CoinFlowwExchange/protobuf/runtime/protoiface"
+	"github.com/CoinFlowwExchange/protobuf/runtime/protoimpl"
 )
 
 var (

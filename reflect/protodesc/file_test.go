@@ -9,13 +9,13 @@ import (
 	"strings"
 	"testing"
 
-	"google.golang.org/protobuf/encoding/prototext"
-	"google.golang.org/protobuf/internal/flags"
-	"google.golang.org/protobuf/proto"
-	"google.golang.org/protobuf/reflect/protoreflect"
-	"google.golang.org/protobuf/reflect/protoregistry"
+	"github.com/CoinFlowwExchange/protobuf/encoding/prototext"
+	"github.com/CoinFlowwExchange/protobuf/internal/flags"
+	"github.com/CoinFlowwExchange/protobuf/proto"
+	"github.com/CoinFlowwExchange/protobuf/reflect/protoreflect"
+	"github.com/CoinFlowwExchange/protobuf/reflect/protoregistry"
 
-	"google.golang.org/protobuf/types/descriptorpb"
+	"github.com/CoinFlowwExchange/protobuf/types/descriptorpb"
 )
 
 func mustParseFile(s string) *descriptorpb.FileDescriptorProto {

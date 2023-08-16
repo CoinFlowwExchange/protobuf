@@ -8,8 +8,8 @@ import (
 	"fmt"
 	"testing"
 
-	"google.golang.org/protobuf/internal/impl"
-	piface "google.golang.org/protobuf/runtime/protoiface"
+	"github.com/CoinFlowwExchange/protobuf/internal/impl"
+	piface "github.com/CoinFlowwExchange/protobuf/runtime/protoiface"
 )
 
 // TestValidate tests the internal message validator.

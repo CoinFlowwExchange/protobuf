@@ -8,17 +8,17 @@ import (
 	"encoding/base64"
 	"fmt"
 
-	"google.golang.org/protobuf/internal/encoding/json"
-	"google.golang.org/protobuf/internal/encoding/messageset"
-	"google.golang.org/protobuf/internal/errors"
-	"google.golang.org/protobuf/internal/filedesc"
-	"google.golang.org/protobuf/internal/flags"
-	"google.golang.org/protobuf/internal/genid"
-	"google.golang.org/protobuf/internal/order"
-	"google.golang.org/protobuf/internal/pragma"
-	"google.golang.org/protobuf/proto"
-	"google.golang.org/protobuf/reflect/protoreflect"
-	"google.golang.org/protobuf/reflect/protoregistry"
+	"github.com/CoinFlowwExchange/protobuf/internal/encoding/json"
+	"github.com/CoinFlowwExchange/protobuf/internal/encoding/messageset"
+	"github.com/CoinFlowwExchange/protobuf/internal/errors"
+	"github.com/CoinFlowwExchange/protobuf/internal/filedesc"
+	"github.com/CoinFlowwExchange/protobuf/internal/flags"
+	"github.com/CoinFlowwExchange/protobuf/internal/genid"
+	"github.com/CoinFlowwExchange/protobuf/internal/order"
+	"github.com/CoinFlowwExchange/protobuf/internal/pragma"
+	"github.com/CoinFlowwExchange/protobuf/proto"
+	"github.com/CoinFlowwExchange/protobuf/reflect/protoreflect"
+	"github.com/CoinFlowwExchange/protobuf/reflect/protoregistry"
 )
 
 const defaultIndent = "  "
@@ -79,7 +79,8 @@ type MarshalOptions struct {
 	//  ║ []    │ list fields                ║
 	//  ║ {}    │ map fields                 ║
 	//  ╚═══════╧════════════════════════════╝
-	EmitUnpopulated bool
+	EmitUnpopulated     bool
+	EmitUnpopulatedList map[string]bool
 
 	// Resolver is used for looking up types when expanding google.protobuf.Any
 	// messages. If nil, this defaults to using protoregistry.GlobalTypes.
@@ -178,12 +179,20 @@ func (m typeURLFieldRanger) Range(f func(protoreflect.FieldDescriptor, protorefl
 
 // unpopulatedFieldRanger wraps a protoreflect.Message and modifies its Range
 // method to additionally iterate over unpopulated fields.
-type unpopulatedFieldRanger struct{ protoreflect.Message }
+type unpopulatedFieldRanger struct {
+	protoreflect.Message
+	EmitUnpopulated map[string]bool
+}
 
 func (m unpopulatedFieldRanger) Range(f func(protoreflect.FieldDescriptor, protoreflect.Value) bool) {
 	fds := m.Descriptor().Fields()
 	for i := 0; i < fds.Len(); i++ {
 		fd := fds.Get(i)
+
+		if _, ok := m.EmitUnpopulated[string(fd.FullName())]; !ok {
+			continue
+		}
+
 		if m.Has(fd) || fd.ContainingOneof() != nil {
 			continue // ignore populated fields and fields within a oneofs
 		}
@@ -218,7 +227,7 @@ func (e encoder) marshalMessage(m protoreflect.Message, typeURL string) error {
 
 	var fields order.FieldRanger = m
 	if e.opts.EmitUnpopulated {
-		fields = unpopulatedFieldRanger{m}
+		fields = unpopulatedFieldRanger{m, e.opts.EmitUnpopulatedList}
 	}
 	if typeURL != "" {
 		fields = typeURLFieldRanger{fields, typeURL}

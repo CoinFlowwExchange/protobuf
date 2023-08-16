@@ -13,15 +13,15 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 
-	"google.golang.org/protobuf/encoding/prototext"
-	"google.golang.org/protobuf/encoding/protowire"
-	"google.golang.org/protobuf/proto"
-	"google.golang.org/protobuf/reflect/protoreflect"
+	"github.com/CoinFlowwExchange/protobuf/encoding/prototext"
+	"github.com/CoinFlowwExchange/protobuf/encoding/protowire"
+	"github.com/CoinFlowwExchange/protobuf/proto"
+	"github.com/CoinFlowwExchange/protobuf/reflect/protoreflect"
 
-	"google.golang.org/protobuf/internal/errors"
-	orderpb "google.golang.org/protobuf/internal/testprotos/order"
-	testpb "google.golang.org/protobuf/internal/testprotos/test"
-	test3pb "google.golang.org/protobuf/internal/testprotos/test3"
+	"github.com/CoinFlowwExchange/protobuf/internal/errors"
+	orderpb "github.com/CoinFlowwExchange/protobuf/internal/testprotos/order"
+	testpb "github.com/CoinFlowwExchange/protobuf/internal/testprotos/test"
+	test3pb "github.com/CoinFlowwExchange/protobuf/internal/testprotos/test3"
 )
 
 func TestEncode(t *testing.T) {

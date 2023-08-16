@@ -9,11 +9,11 @@ import (
 	"reflect"
 	"sort"
 
-	"google.golang.org/protobuf/encoding/protowire"
-	"google.golang.org/protobuf/internal/encoding/messageset"
-	"google.golang.org/protobuf/internal/order"
-	"google.golang.org/protobuf/reflect/protoreflect"
-	"google.golang.org/protobuf/runtime/protoiface"
+	"github.com/CoinFlowwExchange/protobuf/encoding/protowire"
+	"github.com/CoinFlowwExchange/protobuf/internal/encoding/messageset"
+	"github.com/CoinFlowwExchange/protobuf/internal/order"
+	"github.com/CoinFlowwExchange/protobuf/reflect/protoreflect"
+	"github.com/CoinFlowwExchange/protobuf/runtime/protoiface"
 )
 
 // coderMessageInfo contains per-message information used by the fast-path functions.

@@ -9,16 +9,16 @@ import (
 	"strings"
 	"testing"
 
-	"google.golang.org/protobuf/encoding/prototext"
-	"google.golang.org/protobuf/internal/flags"
-	"google.golang.org/protobuf/proto"
-	"google.golang.org/protobuf/reflect/protoregistry"
+	"github.com/CoinFlowwExchange/protobuf/encoding/prototext"
+	"github.com/CoinFlowwExchange/protobuf/internal/flags"
+	"github.com/CoinFlowwExchange/protobuf/proto"
+	"github.com/CoinFlowwExchange/protobuf/reflect/protoregistry"
 
-	testpb "google.golang.org/protobuf/internal/testprotos/test"
-	weakpb "google.golang.org/protobuf/internal/testprotos/test/weak1"
-	pb2 "google.golang.org/protobuf/internal/testprotos/textpb2"
-	pb3 "google.golang.org/protobuf/internal/testprotos/textpb3"
-	"google.golang.org/protobuf/types/known/anypb"
+	testpb "github.com/CoinFlowwExchange/protobuf/internal/testprotos/test"
+	weakpb "github.com/CoinFlowwExchange/protobuf/internal/testprotos/test/weak1"
+	pb2 "github.com/CoinFlowwExchange/protobuf/internal/testprotos/textpb2"
+	pb3 "github.com/CoinFlowwExchange/protobuf/internal/testprotos/textpb3"
+	"github.com/CoinFlowwExchange/protobuf/types/known/anypb"
 )
 
 func TestUnmarshal(t *testing.T) {

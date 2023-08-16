@@ -12,9 +12,9 @@
 package protoimpl
 
 import (
-	"google.golang.org/protobuf/internal/filedesc"
-	"google.golang.org/protobuf/internal/filetype"
-	"google.golang.org/protobuf/internal/impl"
+	"github.com/CoinFlowwExchange/protobuf/internal/filedesc"
+	"github.com/CoinFlowwExchange/protobuf/internal/filetype"
+	"github.com/CoinFlowwExchange/protobuf/internal/impl"
 )
 
 // UnsafeEnabled specifies whether package unsafe can be used.

@@ -8,9 +8,9 @@
 package msetextpb
 
 import (
-	messagesetpb "google.golang.org/protobuf/internal/testprotos/messageset/messagesetpb"
-	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
-	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
+	messagesetpb "github.com/CoinFlowwExchange/protobuf/internal/testprotos/messageset/messagesetpb"
+	protoreflect "github.com/CoinFlowwExchange/protobuf/reflect/protoreflect"
+	protoimpl "github.com/CoinFlowwExchange/protobuf/runtime/protoimpl"
 	reflect "reflect"
 	sync "sync"
 )

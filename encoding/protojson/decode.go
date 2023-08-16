@@ -11,16 +11,16 @@ import (
 	"strconv"
 	"strings"
 
-	"google.golang.org/protobuf/internal/encoding/json"
-	"google.golang.org/protobuf/internal/encoding/messageset"
-	"google.golang.org/protobuf/internal/errors"
-	"google.golang.org/protobuf/internal/flags"
-	"google.golang.org/protobuf/internal/genid"
-	"google.golang.org/protobuf/internal/pragma"
-	"google.golang.org/protobuf/internal/set"
-	"google.golang.org/protobuf/proto"
-	"google.golang.org/protobuf/reflect/protoreflect"
-	"google.golang.org/protobuf/reflect/protoregistry"
+	"github.com/CoinFlowwExchange/protobuf/internal/encoding/json"
+	"github.com/CoinFlowwExchange/protobuf/internal/encoding/messageset"
+	"github.com/CoinFlowwExchange/protobuf/internal/errors"
+	"github.com/CoinFlowwExchange/protobuf/internal/flags"
+	"github.com/CoinFlowwExchange/protobuf/internal/genid"
+	"github.com/CoinFlowwExchange/protobuf/internal/pragma"
+	"github.com/CoinFlowwExchange/protobuf/internal/set"
+	"github.com/CoinFlowwExchange/protobuf/proto"
+	"github.com/CoinFlowwExchange/protobuf/reflect/protoreflect"
+	"github.com/CoinFlowwExchange/protobuf/reflect/protoregistry"
 )
 
 // Unmarshal reads the given []byte into the given proto.Message.

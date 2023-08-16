@@ -1,4 +1,4 @@
-module google.golang.org/protobuf
+module github.com/CoinFlowwExchange/protobuf
 
 go 1.11
 

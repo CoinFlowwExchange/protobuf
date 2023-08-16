@@ -9,12 +9,12 @@ import (
 	"bytes"
 	"errors"
 
-	"google.golang.org/protobuf/internal/genid"
-	"google.golang.org/protobuf/internal/order"
-	"google.golang.org/protobuf/proto"
-	"google.golang.org/protobuf/reflect/protopath"
-	"google.golang.org/protobuf/reflect/protoreflect"
-	"google.golang.org/protobuf/reflect/protoregistry"
+	"github.com/CoinFlowwExchange/protobuf/internal/genid"
+	"github.com/CoinFlowwExchange/protobuf/internal/order"
+	"github.com/CoinFlowwExchange/protobuf/proto"
+	"github.com/CoinFlowwExchange/protobuf/reflect/protopath"
+	"github.com/CoinFlowwExchange/protobuf/reflect/protoreflect"
+	"github.com/CoinFlowwExchange/protobuf/reflect/protoregistry"
 )
 
 var (

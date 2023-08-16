@@ -14,13 +14,13 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 
-	"google.golang.org/protobuf/internal/detrand"
-	"google.golang.org/protobuf/internal/filedesc"
-	"google.golang.org/protobuf/proto"
-	"google.golang.org/protobuf/reflect/protodesc"
-	"google.golang.org/protobuf/reflect/protoreflect"
+	"github.com/CoinFlowwExchange/protobuf/internal/detrand"
+	"github.com/CoinFlowwExchange/protobuf/internal/filedesc"
+	"github.com/CoinFlowwExchange/protobuf/proto"
+	"github.com/CoinFlowwExchange/protobuf/reflect/protodesc"
+	"github.com/CoinFlowwExchange/protobuf/reflect/protoreflect"
 
-	"google.golang.org/protobuf/types/descriptorpb"
+	"github.com/CoinFlowwExchange/protobuf/types/descriptorpb"
 )
 
 func init() {

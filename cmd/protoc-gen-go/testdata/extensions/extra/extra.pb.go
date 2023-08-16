@@ -8,8 +8,8 @@
 package extra
 
 import (
-	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
-	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
+	protoreflect "github.com/CoinFlowwExchange/protobuf/reflect/protoreflect"
+	protoimpl "github.com/CoinFlowwExchange/protobuf/runtime/protoimpl"
 	reflect "reflect"
 	sync "sync"
 )

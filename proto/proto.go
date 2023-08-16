@@ -5,8 +5,8 @@
 package proto
 
 import (
-	"google.golang.org/protobuf/internal/errors"
-	"google.golang.org/protobuf/reflect/protoreflect"
+	"github.com/CoinFlowwExchange/protobuf/internal/errors"
+	"github.com/CoinFlowwExchange/protobuf/reflect/protoreflect"
 )
 
 // Message is the top-level interface that all messages must implement.

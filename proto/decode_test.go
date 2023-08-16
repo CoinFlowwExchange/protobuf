@@ -10,14 +10,14 @@ import (
 	"reflect"
 	"testing"
 
-	"google.golang.org/protobuf/encoding/prototext"
-	"google.golang.org/protobuf/proto"
-	"google.golang.org/protobuf/reflect/protoreflect"
-	"google.golang.org/protobuf/testing/protopack"
+	"github.com/CoinFlowwExchange/protobuf/encoding/prototext"
+	"github.com/CoinFlowwExchange/protobuf/proto"
+	"github.com/CoinFlowwExchange/protobuf/reflect/protoreflect"
+	"github.com/CoinFlowwExchange/protobuf/testing/protopack"
 
-	"google.golang.org/protobuf/internal/errors"
-	testpb "google.golang.org/protobuf/internal/testprotos/test"
-	test3pb "google.golang.org/protobuf/internal/testprotos/test3"
+	"github.com/CoinFlowwExchange/protobuf/internal/errors"
+	testpb "github.com/CoinFlowwExchange/protobuf/internal/testprotos/test"
+	test3pb "github.com/CoinFlowwExchange/protobuf/internal/testprotos/test3"
 )
 
 func TestDecode(t *testing.T) {

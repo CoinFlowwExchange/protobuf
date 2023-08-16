@@ -8,10 +8,10 @@ package dynamicpb
 import (
 	"math"
 
-	"google.golang.org/protobuf/internal/errors"
-	"google.golang.org/protobuf/reflect/protoreflect"
-	"google.golang.org/protobuf/runtime/protoiface"
-	"google.golang.org/protobuf/runtime/protoimpl"
+	"github.com/CoinFlowwExchange/protobuf/internal/errors"
+	"github.com/CoinFlowwExchange/protobuf/reflect/protoreflect"
+	"github.com/CoinFlowwExchange/protobuf/runtime/protoiface"
+	"github.com/CoinFlowwExchange/protobuf/runtime/protoimpl"
 )
 
 // enum is a dynamic protoreflect.Enum.

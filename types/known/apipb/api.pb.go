@@ -34,10 +34,10 @@
 package apipb
 
 import (
-	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
-	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
-	sourcecontextpb "google.golang.org/protobuf/types/known/sourcecontextpb"
-	typepb "google.golang.org/protobuf/types/known/typepb"
+	protoreflect "github.com/CoinFlowwExchange/protobuf/reflect/protoreflect"
+	protoimpl "github.com/CoinFlowwExchange/protobuf/runtime/protoimpl"
+	sourcecontextpb "github.com/CoinFlowwExchange/protobuf/types/known/sourcecontextpb"
+	typepb "github.com/CoinFlowwExchange/protobuf/types/known/typepb"
 	reflect "reflect"
 	sync "sync"
 )

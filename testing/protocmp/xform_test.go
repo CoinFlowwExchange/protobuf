@@ -9,12 +9,12 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 
-	"google.golang.org/protobuf/internal/detrand"
-	"google.golang.org/protobuf/proto"
-	"google.golang.org/protobuf/reflect/protoreflect"
-	"google.golang.org/protobuf/testing/protopack"
+	"github.com/CoinFlowwExchange/protobuf/internal/detrand"
+	"github.com/CoinFlowwExchange/protobuf/proto"
+	"github.com/CoinFlowwExchange/protobuf/reflect/protoreflect"
+	"github.com/CoinFlowwExchange/protobuf/testing/protopack"
 
-	testpb "google.golang.org/protobuf/internal/testprotos/test"
+	testpb "github.com/CoinFlowwExchange/protobuf/internal/testprotos/test"
 )
 
 func init() {

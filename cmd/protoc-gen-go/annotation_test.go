@@ -9,13 +9,13 @@ import (
 	"io/ioutil"
 	"testing"
 
+	"github.com/CoinFlowwExchange/protobuf/encoding/prototext"
+	"github.com/CoinFlowwExchange/protobuf/internal/genid"
+	"github.com/CoinFlowwExchange/protobuf/proto"
+	"github.com/CoinFlowwExchange/protobuf/testing/protocmp"
 	"github.com/google/go-cmp/cmp"
-	"google.golang.org/protobuf/encoding/prototext"
-	"google.golang.org/protobuf/internal/genid"
-	"google.golang.org/protobuf/proto"
-	"google.golang.org/protobuf/testing/protocmp"
 
-	"google.golang.org/protobuf/types/descriptorpb"
+	"github.com/CoinFlowwExchange/protobuf/types/descriptorpb"
 )
 
 func TestAnnotations(t *testing.T) {

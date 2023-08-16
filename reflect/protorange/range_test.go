@@ -8,17 +8,17 @@ import (
 	"testing"
 	"time"
 
+	"github.com/CoinFlowwExchange/protobuf/proto"
+	"github.com/CoinFlowwExchange/protobuf/reflect/protopath"
+	"github.com/CoinFlowwExchange/protobuf/reflect/protoreflect"
+	"github.com/CoinFlowwExchange/protobuf/reflect/protoregistry"
+	"github.com/CoinFlowwExchange/protobuf/testing/protocmp"
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
-	"google.golang.org/protobuf/proto"
-	"google.golang.org/protobuf/reflect/protopath"
-	"google.golang.org/protobuf/reflect/protoreflect"
-	"google.golang.org/protobuf/reflect/protoregistry"
-	"google.golang.org/protobuf/testing/protocmp"
 
-	newspb "google.golang.org/protobuf/internal/testprotos/news"
-	anypb "google.golang.org/protobuf/types/known/anypb"
-	timestamppb "google.golang.org/protobuf/types/known/timestamppb"
+	newspb "github.com/CoinFlowwExchange/protobuf/internal/testprotos/news"
+	anypb "github.com/CoinFlowwExchange/protobuf/types/known/anypb"
+	timestamppb "github.com/CoinFlowwExchange/protobuf/types/known/timestamppb"
 )
 
 func mustMarshal(m proto.Message) []byte {

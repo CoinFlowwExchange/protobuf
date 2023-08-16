@@ -10,13 +10,13 @@ import (
 	"io/ioutil"
 	"testing"
 
-	"google.golang.org/protobuf/proto"
-	"google.golang.org/protobuf/reflect/protodesc"
-	"google.golang.org/protobuf/reflect/protoreflect"
+	"github.com/CoinFlowwExchange/protobuf/proto"
+	"github.com/CoinFlowwExchange/protobuf/reflect/protodesc"
+	"github.com/CoinFlowwExchange/protobuf/reflect/protoreflect"
 
-	testpb "google.golang.org/protobuf/internal/testprotos/test"
-	_ "google.golang.org/protobuf/internal/testprotos/test/weak1"
-	"google.golang.org/protobuf/types/descriptorpb"
+	testpb "github.com/CoinFlowwExchange/protobuf/internal/testprotos/test"
+	_ "github.com/CoinFlowwExchange/protobuf/internal/testprotos/test/weak1"
+	"github.com/CoinFlowwExchange/protobuf/types/descriptorpb"
 )
 
 var testFile = new(testpb.TestAllTypes).ProtoReflect().Descriptor().ParentFile()

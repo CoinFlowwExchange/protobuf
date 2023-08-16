@@ -7,15 +7,15 @@ package anypb_test
 import (
 	"testing"
 
+	"github.com/CoinFlowwExchange/protobuf/proto"
+	"github.com/CoinFlowwExchange/protobuf/reflect/protoreflect"
+	"github.com/CoinFlowwExchange/protobuf/testing/protocmp"
 	"github.com/google/go-cmp/cmp"
-	"google.golang.org/protobuf/proto"
-	"google.golang.org/protobuf/reflect/protoreflect"
-	"google.golang.org/protobuf/testing/protocmp"
 
-	testpb "google.golang.org/protobuf/internal/testprotos/test"
-	apb "google.golang.org/protobuf/types/known/anypb"
-	epb "google.golang.org/protobuf/types/known/emptypb"
-	wpb "google.golang.org/protobuf/types/known/wrapperspb"
+	testpb "github.com/CoinFlowwExchange/protobuf/internal/testprotos/test"
+	apb "github.com/CoinFlowwExchange/protobuf/types/known/anypb"
+	epb "github.com/CoinFlowwExchange/protobuf/types/known/emptypb"
+	wpb "github.com/CoinFlowwExchange/protobuf/types/known/wrapperspb"
 )
 
 func mustMarshal(m proto.Message) []byte {

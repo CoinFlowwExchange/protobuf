@@ -7,16 +7,16 @@ package proto_test
 import (
 	"reflect"
 
-	"google.golang.org/protobuf/encoding/prototext"
-	"google.golang.org/protobuf/internal/filedesc"
-	"google.golang.org/protobuf/internal/flags"
-	"google.golang.org/protobuf/proto"
-	"google.golang.org/protobuf/reflect/protodesc"
-	"google.golang.org/protobuf/reflect/protoreflect"
-	"google.golang.org/protobuf/runtime/protoimpl"
-	"google.golang.org/protobuf/testing/protopack"
+	"github.com/CoinFlowwExchange/protobuf/encoding/prototext"
+	"github.com/CoinFlowwExchange/protobuf/internal/filedesc"
+	"github.com/CoinFlowwExchange/protobuf/internal/flags"
+	"github.com/CoinFlowwExchange/protobuf/proto"
+	"github.com/CoinFlowwExchange/protobuf/reflect/protodesc"
+	"github.com/CoinFlowwExchange/protobuf/reflect/protoreflect"
+	"github.com/CoinFlowwExchange/protobuf/runtime/protoimpl"
+	"github.com/CoinFlowwExchange/protobuf/testing/protopack"
 
-	"google.golang.org/protobuf/types/descriptorpb"
+	"github.com/CoinFlowwExchange/protobuf/types/descriptorpb"
 )
 
 func init() {

@@ -5,13 +5,13 @@
 package protodesc
 
 import (
-	"google.golang.org/protobuf/internal/errors"
-	"google.golang.org/protobuf/internal/filedesc"
-	"google.golang.org/protobuf/internal/strs"
-	"google.golang.org/protobuf/proto"
-	"google.golang.org/protobuf/reflect/protoreflect"
+	"github.com/CoinFlowwExchange/protobuf/internal/errors"
+	"github.com/CoinFlowwExchange/protobuf/internal/filedesc"
+	"github.com/CoinFlowwExchange/protobuf/internal/strs"
+	"github.com/CoinFlowwExchange/protobuf/proto"
+	"github.com/CoinFlowwExchange/protobuf/reflect/protoreflect"
 
-	"google.golang.org/protobuf/types/descriptorpb"
+	"github.com/CoinFlowwExchange/protobuf/types/descriptorpb"
 )
 
 type descsByName map[protoreflect.FullName]protoreflect.Descriptor

@@ -11,22 +11,22 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 
-	"google.golang.org/protobuf/encoding/protojson"
-	"google.golang.org/protobuf/internal/detrand"
-	"google.golang.org/protobuf/internal/flags"
-	"google.golang.org/protobuf/proto"
-	"google.golang.org/protobuf/reflect/protoregistry"
-	"google.golang.org/protobuf/testing/protopack"
+	"github.com/CoinFlowwExchange/protobuf/encoding/protojson"
+	"github.com/CoinFlowwExchange/protobuf/internal/detrand"
+	"github.com/CoinFlowwExchange/protobuf/internal/flags"
+	"github.com/CoinFlowwExchange/protobuf/proto"
+	"github.com/CoinFlowwExchange/protobuf/reflect/protoregistry"
+	"github.com/CoinFlowwExchange/protobuf/testing/protopack"
 
-	pb2 "google.golang.org/protobuf/internal/testprotos/textpb2"
-	pb3 "google.golang.org/protobuf/internal/testprotos/textpb3"
-	"google.golang.org/protobuf/types/known/anypb"
-	"google.golang.org/protobuf/types/known/durationpb"
-	"google.golang.org/protobuf/types/known/emptypb"
-	"google.golang.org/protobuf/types/known/fieldmaskpb"
-	"google.golang.org/protobuf/types/known/structpb"
-	"google.golang.org/protobuf/types/known/timestamppb"
-	"google.golang.org/protobuf/types/known/wrapperspb"
+	pb2 "github.com/CoinFlowwExchange/protobuf/internal/testprotos/textpb2"
+	pb3 "github.com/CoinFlowwExchange/protobuf/internal/testprotos/textpb3"
+	"github.com/CoinFlowwExchange/protobuf/types/known/anypb"
+	"github.com/CoinFlowwExchange/protobuf/types/known/durationpb"
+	"github.com/CoinFlowwExchange/protobuf/types/known/emptypb"
+	"github.com/CoinFlowwExchange/protobuf/types/known/fieldmaskpb"
+	"github.com/CoinFlowwExchange/protobuf/types/known/structpb"
+	"github.com/CoinFlowwExchange/protobuf/types/known/timestamppb"
+	"github.com/CoinFlowwExchange/protobuf/types/known/wrapperspb"
 )
 
 // Disable detrand to enable direct comparisons on outputs.

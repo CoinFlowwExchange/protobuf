@@ -9,10 +9,10 @@
 package filedesc
 
 import (
-	"google.golang.org/protobuf/encoding/protowire"
-	"google.golang.org/protobuf/internal/genid"
-	"google.golang.org/protobuf/reflect/protoreflect"
-	"google.golang.org/protobuf/reflect/protoregistry"
+	"github.com/CoinFlowwExchange/protobuf/encoding/protowire"
+	"github.com/CoinFlowwExchange/protobuf/internal/genid"
+	"github.com/CoinFlowwExchange/protobuf/reflect/protoreflect"
+	"github.com/CoinFlowwExchange/protobuf/reflect/protoregistry"
 )
 
 // Builder construct a protoreflect.FileDescriptor from the raw descriptor.

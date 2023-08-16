@@ -10,9 +10,9 @@ import (
 	"strings"
 	"sync"
 
-	"google.golang.org/protobuf/internal/filedesc"
-	"google.golang.org/protobuf/internal/strs"
-	"google.golang.org/protobuf/reflect/protoreflect"
+	"github.com/CoinFlowwExchange/protobuf/internal/filedesc"
+	"github.com/CoinFlowwExchange/protobuf/internal/strs"
+	"github.com/CoinFlowwExchange/protobuf/reflect/protoreflect"
 )
 
 // legacyEnumName returns the name of enums used in legacy code.

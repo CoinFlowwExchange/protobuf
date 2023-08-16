@@ -10,9 +10,9 @@ import (
 	"reflect"
 	"sync"
 
-	"google.golang.org/protobuf/internal/flags"
-	"google.golang.org/protobuf/reflect/protoreflect"
-	"google.golang.org/protobuf/reflect/protoregistry"
+	"github.com/CoinFlowwExchange/protobuf/internal/flags"
+	"github.com/CoinFlowwExchange/protobuf/reflect/protoreflect"
+	"github.com/CoinFlowwExchange/protobuf/reflect/protoregistry"
 )
 
 type fieldInfo struct {

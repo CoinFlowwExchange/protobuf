@@ -5,13 +5,13 @@
 package proto_test
 
 import (
-	"google.golang.org/protobuf/encoding/protowire"
-	"google.golang.org/protobuf/internal/flags"
-	"google.golang.org/protobuf/proto"
-	"google.golang.org/protobuf/testing/protopack"
+	"github.com/CoinFlowwExchange/protobuf/encoding/protowire"
+	"github.com/CoinFlowwExchange/protobuf/internal/flags"
+	"github.com/CoinFlowwExchange/protobuf/proto"
+	"github.com/CoinFlowwExchange/protobuf/testing/protopack"
 
-	messagesetpb "google.golang.org/protobuf/internal/testprotos/messageset/messagesetpb"
-	msetextpb "google.golang.org/protobuf/internal/testprotos/messageset/msetextpb"
+	messagesetpb "github.com/CoinFlowwExchange/protobuf/internal/testprotos/messageset/messagesetpb"
+	msetextpb "github.com/CoinFlowwExchange/protobuf/internal/testprotos/messageset/msetextpb"
 )
 
 func init() {

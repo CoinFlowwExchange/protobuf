@@ -8,11 +8,11 @@ import (
 	"reflect"
 	"testing"
 
-	"google.golang.org/protobuf/internal/encoding/tag"
-	"google.golang.org/protobuf/internal/filedesc"
-	"google.golang.org/protobuf/proto"
-	"google.golang.org/protobuf/reflect/protodesc"
-	"google.golang.org/protobuf/reflect/protoreflect"
+	"github.com/CoinFlowwExchange/protobuf/internal/encoding/tag"
+	"github.com/CoinFlowwExchange/protobuf/internal/filedesc"
+	"github.com/CoinFlowwExchange/protobuf/proto"
+	"github.com/CoinFlowwExchange/protobuf/reflect/protodesc"
+	"github.com/CoinFlowwExchange/protobuf/reflect/protoreflect"
 )
 
 func Test(t *testing.T) {

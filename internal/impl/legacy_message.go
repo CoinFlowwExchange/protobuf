@@ -10,13 +10,13 @@ import (
 	"strings"
 	"sync"
 
-	"google.golang.org/protobuf/internal/descopts"
-	ptag "google.golang.org/protobuf/internal/encoding/tag"
-	"google.golang.org/protobuf/internal/errors"
-	"google.golang.org/protobuf/internal/filedesc"
-	"google.golang.org/protobuf/internal/strs"
-	"google.golang.org/protobuf/reflect/protoreflect"
-	"google.golang.org/protobuf/runtime/protoiface"
+	"github.com/CoinFlowwExchange/protobuf/internal/descopts"
+	ptag "github.com/CoinFlowwExchange/protobuf/internal/encoding/tag"
+	"github.com/CoinFlowwExchange/protobuf/internal/errors"
+	"github.com/CoinFlowwExchange/protobuf/internal/filedesc"
+	"github.com/CoinFlowwExchange/protobuf/internal/strs"
+	"github.com/CoinFlowwExchange/protobuf/reflect/protoreflect"
+	"github.com/CoinFlowwExchange/protobuf/runtime/protoiface"
 )
 
 // legacyWrapMessage wraps v as a protoreflect.Message,

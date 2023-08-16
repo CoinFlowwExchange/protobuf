@@ -7,13 +7,13 @@ package proto_test
 import (
 	"testing"
 
-	"google.golang.org/protobuf/internal/flags"
-	"google.golang.org/protobuf/internal/protobuild"
-	"google.golang.org/protobuf/proto"
-	"google.golang.org/protobuf/testing/protopack"
+	"github.com/CoinFlowwExchange/protobuf/internal/flags"
+	"github.com/CoinFlowwExchange/protobuf/internal/protobuild"
+	"github.com/CoinFlowwExchange/protobuf/proto"
+	"github.com/CoinFlowwExchange/protobuf/testing/protopack"
 
-	testpb "google.golang.org/protobuf/internal/testprotos/test"
-	weakpb "google.golang.org/protobuf/internal/testprotos/test/weak1"
+	testpb "github.com/CoinFlowwExchange/protobuf/internal/testprotos/test"
+	weakpb "github.com/CoinFlowwExchange/protobuf/internal/testprotos/test/weak1"
 )
 
 func init() {
