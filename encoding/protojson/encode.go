@@ -7,6 +7,7 @@ package protojson
 import (
 	"encoding/base64"
 	"fmt"
+	"strings"
 
 	"github.com/CoinFlowwExchange/protobuf/internal/encoding/json"
 	"github.com/CoinFlowwExchange/protobuf/internal/encoding/messageset"
@@ -189,7 +190,11 @@ func (m unpopulatedFieldRanger) Range(f func(protoreflect.FieldDescriptor, proto
 	for i := 0; i < fds.Len(); i++ {
 		fd := fds.Get(i)
 
-		if _, ok := m.EmitUnpopulated[string(fd.FullName())]; !ok {
+		fullName := string(fd.FullName())
+		if strings.HasSuffix(fullName, ".code") {
+			continue
+		}
+		if _, ok := m.EmitUnpopulated[fullName]; !ok {
 			continue
 		}
 
